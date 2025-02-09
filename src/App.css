@@ -1,0 +1,122 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  position: relative;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 220px;
+  height: 520px;
+  padding: 12px 8px;
+  margin: 6px;
+  background-color: black;
+  border-radius: 12px;
+}
+
+.price-rating {
+  background-color: rgb(26, 24, 24);
+  border-radius: 12px;
+  margin: 2px 1px;
+  text-align: center;
+}
+
+.price-rating .price {
+  font-weight: bold;
+}
+
+.card-button {
+  margin: 2px 1px;
+  background-color: white;
+  color:rgb(26, 24, 24);
+  font-weight: 600;
+  border: none;
+}
+
+.card-button:hover {
+ background-color: rgb(209, 215, 215);
+ transition: all ease-in 150ms;
+}
+
+.card-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 6px;
+  padding: 8px 1px;
+}
+
+.pagination-button {
+  width: 40px;
+  text-align: center;
+  padding: 4px;
+  margin: 2px;
+  background-color: rgb(29, 31, 31);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.pagination-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 2px;
+  margin: 6px auto;
+  background-color: rgb(54, 52, 50);
+  border-radius: 12px;
+}
+
+.prev-next {
+  text-align: center;
+  width: 80px;
+  padding: 4px 6px;
+  margin: 4px;
+  color:rgb(79, 2, 235);
+  background-color: rgb(29, 31, 31);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.active {
+  color: blue;
+  background-color: white;
+}
+
+.navbar {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px); /* Glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  color: white;
+  border-radius: 50px;
+
+  margin: 12px;
+  position: sticky;
+  top: 10px; /* Sticks at 10px from the top */
+  z-index: 100; /
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.navbar p {
+  font-weight: bold;
+}
